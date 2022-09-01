@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --DarkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --VeryDarkBlue: hsl(212, 21%, 14%);
+  --DarkGrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --font1: 'Montserrat', sans-serif;
+  --font2: 'Fraunces', serif;
+}
+body {
+  font-size: 14px;
+  background-color: var(--Cream);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 1px);
+}
+figure img {
+  max-width: 350px;
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+figure .img2 {
+  display: none;
+}
+.label {
+  max-width: 350px;
+  background: var(--White);
+  padding: 2.5rem; 
+  border-radius: 0 0.625rem 0.625rem 0;
+}
+.label h3, p, button, span {
+  font-family: 'Montserrat', sans-serif;
+}
+.label h1, ul {
+  font-family: 'Fraunces', serif;
+}
+.label h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--DarkGrayishblue);
+}
+.label h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.label p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding: 0 0.6rem;
+  font-weight: 500;
+  color: var(--DarkGrayishblue);
+}
+.label ul {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  list-style: none;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--DarkCyan);
+}
+.label .diff {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--DarkGrayishblue);
+  font-family: var(--font1);
+  font-weight: 500;
+}
+.label button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--White);
+  background: var(--DarkCyan);
+  border-radius: 0.625rem;
+  cursor: pointer;
+  margin: 0rem auto;
+}
+.label button:hover {
+  background-color: hsl(160, 38%, 19%);
+}
+.label img {
+  margin-right: 0.625rem;
+}
+.attribution {
+  margin-top: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/** for mobile devices **/
+@media (min-width: 375px) and (max-width: 576px) {
+  
+  .container {
+    flex-direction: column;
+  }
+  figure .img1 {
+    display: none;
+  }
+  figure .img2 {
+    display: inherit;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .label {
+    max-width: 350px;
+    padding: 0.8rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+  .label h3, h1, p {
+    margin: 0.8rem;
+  }
+  .label h3 {
+    font-size: 0.9rem;
+  }
+  .label h1 {
+    padding: 0;
+    font-size: 2rem;
+  }
+  .label p{
+    padding: 0;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .label ul {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .label button {
+    width: 300px;
+    margin: 1rem auto;
+  }
+}
