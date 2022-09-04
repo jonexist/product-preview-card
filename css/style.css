@@ -35,8 +35,9 @@ figure .img2 {
 .label {
   max-width: 350px;
   background: var(--White);
-  padding: 2.5rem; 
+  padding: 1.5rem; 
   border-radius: 0 0.625rem 0.625rem 0;
+  margin-bottom: 0.15rem;
 }
 .label h3, p, button, span {
   font-family: 'Montserrat', sans-serif;
