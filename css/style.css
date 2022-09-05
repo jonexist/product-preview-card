@@ -31,11 +31,12 @@ figure img {
 }
 figure .img2 {
   display: none;
+  max-width: 340px;
 }
 .label {
   max-width: 350px;
   background: var(--White);
-  padding: 1.5rem; 
+  padding: 1.45rem; 
   border-radius: 0 0.625rem 0.625rem 0;
   margin-bottom: 0.15rem;
 }
@@ -112,7 +113,7 @@ figure .img2 {
   color: hsl(228, 45%, 44%);
 }
 /** for mobile devices **/
-@media (min-width: 375px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 700px) {
   
   .container {
     flex-direction: column;
@@ -125,7 +126,7 @@ figure .img2 {
     border-radius: 0.625rem 0.625rem 0 0;
   }
   .label {
-    max-width: 350px;
+    max-width: 340px;
     padding: 0.8rem;
     border-radius: 0 0 0.625rem 0.625rem;
   }
